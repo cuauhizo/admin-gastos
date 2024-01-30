@@ -58,7 +58,7 @@ const definirPresupuesto = () =>{
   color: var(--azul);
 }
 
-.presupuesto input[type="number"]{  
+.presupuesto input[type="number"]{
   background-color: var(--gris-claro);
   border-radius: 1rem;
   padding: 1rem;

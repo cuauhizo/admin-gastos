@@ -1,14 +1,14 @@
 <template>
   <div class="gasto sombra">
     <div class="contenido">
-        <img 
-            :src="diccionarioIconos[gasto.categoria]" 
+        <img
+            :src="diccionarioIconos[gasto.categoria]"
             alt="Icono gasto"
             class="icono"
         >
       <div class="detalles">
         <p class="categoria">{{ gasto.categoria }}</p>
-        <p 
+        <p
             class="nombre"
             @click="$emit('seleccionar-gasto', gasto.id)"
             >{{ gasto.nombre }}</p>
@@ -58,8 +58,7 @@ defineEmits(['seleccionar-gasto'])
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem  ;
-    
-} 
+}
 .contenido{
     display: flex;
     align-items: center;
@@ -70,7 +69,7 @@ defineEmits(['seleccionar-gasto'])
 }
 .detalles p {
     margin: 0 0 1rem 0;
-} 
+}
 .categoria{
     color: var(--gris);
     font-size: 1.2rem;

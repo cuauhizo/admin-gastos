@@ -17,17 +17,17 @@
       </div>
     </header>
     <main v-if="presupuesto > 0">
-      <Filtros 
+      <Filtros
       v-model:filtro="filtro"
       />
       <div class="listado-gastos contenedor">
         <!-- <h2>{{ gastos.length > 0 ? "Gastos" : "No hay gastos" }}</h2> -->
         <h2>{{ gastosFiltrados.length > 0 ? "Gastos" : "No hay gastos" }}</h2>
         <!-- <pre> {{ gastosFiltrados.length  }} </pre> -->
-        <Gasto 
-        v-for="gasto in gastosFiltrados" 
-        :key="gasto.id" 
-        :gasto="gasto" 
+        <Gasto
+        v-for="gasto in gastosFiltrados"
+        :key="gasto.id"
+        :gasto="gasto"
         @seleccionar-gasto="seleccionarGasto"
         />
       </div>
